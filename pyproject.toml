@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "crdb-transaction-issue"
+version = "0.1.0"
+description = ""
+authors = ["joelhess <joelhess@flywheel.io>"]
+readme = "README.md"
+packages = [{include = "app"}]
+
+
+[tool.poetry.dependencies]
+python = "^3.12"
+sqlalchemy = "2.0.30"
+sqlalchemy-cockroachdb = "^2.0.2"
+psycopg2-binary = "^2.9.6"
+structlog = "24.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
